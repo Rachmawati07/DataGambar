@@ -10,7 +10,7 @@ import androidx.fragment.app.viewModels
 import com.rachma.datagambar.databinding.FragmentOverviewBinding
 
 // Untuk mendeklarasikan class yang bernama OverviewFragment
-// Fragmen ini menunjukkan status transaksi layanan web foto Mars.
+// Fragmen ini menunjukkan status transaksi layanan web foto Mars
 class OverviewFragment : Fragment() {
 
     // Untuk mendeklarasikan variabel yang bernama viewModel

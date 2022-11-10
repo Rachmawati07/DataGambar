@@ -37,7 +37,7 @@ class OverviewViewModel : ViewModel() {
     }
 
     // untuk mendeklarasikan fungsi yang bernama getMarsPhotos
-    // Untuk mendapatkan informasi foto Mars dari layanan Mars API Retrofit dan memperbarui [MarsPhoto] [Daftar] [LiveData].
+    // Untuk mendapatkan informasi foto Mars dari layanan Mars API Retrofit dan memperbarui [MarsPhoto] [Daftar] [LiveData]
     private fun getMarsPhotos() {
 
         viewModelScope.launch {

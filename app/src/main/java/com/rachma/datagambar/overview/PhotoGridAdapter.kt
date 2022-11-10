@@ -10,12 +10,12 @@ import com.rachma.datagambar.databinding.GridViewItemBinding
 import com.rachma.datagambar.network.MarsPhoto
 
 // Untuk mendeklarasikan class yang bernama PhotoGridAdapter
-// Kelas ini mengimplementasikan [RecyclerView] [ListAdapter] yang menggunakan Data Binding untuk menampilkan [List] data, termasuk menghitung perbedaan antar daftar.
+// Kelas ini mengimplementasikan [RecyclerView] [ListAdapter] yang menggunakan Data Binding untuk menampilkan [List] data, termasuk menghitung perbedaan antar daftar
 class PhotoGridAdapter :
     ListAdapter<MarsPhoto, PhotoGridAdapter.MarsPhotosViewHolder>(DiffCallback) {
 
     // Untuk mendeklarasikan class yang bernama MarsPhotosViewHolder
-    // Konstruktor MarsPhotosViewHolder mengambil variabel binding dari yang terkait GridViewItem, yang dengan baik memberikannya akses ke informasi [MarsPhoto] lengkap.
+    // Konstruktor MarsPhotosViewHolder mengambil variabel binding dari yang terkait GridViewItem, yang dengan baik memberikannya akses ke informasi [MarsPhoto] lengkap
     class MarsPhotosViewHolder(
         private var binding: GridViewItemBinding
     ) : RecyclerView.ViewHolder(binding.root) {
@@ -26,7 +26,7 @@ class PhotoGridAdapter :
         }
     }
 
-    // Memungkinkan RecyclerView untuk menentukan item mana yang telah berubah saat [Daftar] dari [MarsPhoto] telah diperbarui.
+    // Memungkinkan RecyclerView untuk menentukan item mana yang telah berubah saat [Daftar] dari [MarsPhoto] telah diperbarui
     companion object DiffCallback : DiffUtil.ItemCallback<MarsPhoto>() {
         override fun areItemsTheSame(oldItem: MarsPhoto, newItem: MarsPhoto): Boolean {
             return oldItem.id == newItem.id

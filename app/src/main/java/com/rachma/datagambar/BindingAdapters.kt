@@ -35,7 +35,7 @@ fun bindImage(imgView: ImageView, imgUrl: String?) {
 }
 
 // Untuk mendeklarasikan fungsi yang bernama bindStatus
-// Adaptor pengikat ini menampilkan [MarsApiStatus] permintaan jaringan dalam tampilan gambar.
+// Adaptor pengikat ini menampilkan [MarsApiStatus] permintaan jaringan dalam tampilan gambar
 // Jika permintaan memiliki kesalahan, itu menampilkan gambar yang rusak untuk mencerminkan kesalahan koneksi. Ketika permintaan selesai, itu menyembunyikan tampilan gambar.
 @BindingAdapter("marsApiStatus")
 fun bindStatus(statusImageView: ImageView, status: MarsApiStatus?) {
